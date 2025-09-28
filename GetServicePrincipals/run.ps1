@@ -25,7 +25,7 @@ foreach ($module in $modulesToImport) {
     }
 }
 
-#Connect-MgGraph -Identity -ClientId $env:GRAPH_CLIENT_ID -NoWelcome
+Connect-MgGraph -Identity -ClientId $env:GRAPH_CLIENT_ID -NoWelcome
 #Get-MgContext
 
 <# Interact with query parameters or the body of the request.
