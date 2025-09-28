@@ -5,7 +5,7 @@ param($Request, $TriggerMetadata)
 
 # Write to the Azure Functions log stream.
 Write-Host "PowerShell HTTP trigger function processed a request."
-
+<#
 $modulesToImport = @(
     'Microsoft.Graph.Beta.Applications',
     'Microsoft.Graph.Users',
@@ -27,7 +27,7 @@ foreach ($module in $modulesToImport) {
 
 Connect-MgGraph -Identity -ClientId $env:GRAPH_CLIENT_ID -NoWelcome
 #Get-MgContext
-
+#>
 <# Interact with query parameters or the body of the request.
 $name = $Request.Query.Name
 if (-not $name) {
