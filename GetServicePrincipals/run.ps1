@@ -5,7 +5,7 @@ param($Request, $TriggerMetadata)
 
 # Write to the Azure Functions log stream.
 Write-Host "PowerShell HTTP trigger function processed a request."
-Connect-MgGraph -Identity -ClientId "547483ff-e61e-4291-8050-baaed6c420f1" -NoWelcome
+#Connect-MgGraph -Identity -ClientId "547483ff-e61e-4291-8050-baaed6c420f1" -NoWelcome
 #Get-MgContext
 
 <# Interact with query parameters or the body of the request.
